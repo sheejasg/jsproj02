@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="sample01.js"></script>
+</head>
+
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <button onclick="document.getElementById('myImage').src='she.jpg'">Turn on the light</button>
+    <img id="myImage" src="she.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Rashe.jfif'">Turn off the light</button>
+
+   <button type="button" onclick='document.getElementById("demo").style.fontSize = "35px"'>Change Font! </button>
+   <button type="button" onclick='document.getElementById("demo").style.display = "none"'>Display None! </button>
+   <button type="button" onclick='document.getElementById("demo").style.display = "block"'>Block! </button>
+
+   <button type="button" onclick="onFunc()"> First JS </button>
+   <script src="myScript.js"></script>
+   <button type="button" onclick="onSum()"> Add </button>
+   <button type="button" onclick="onSum1()"> Add </button>
+
+   <script src="myScript1.js"></script>
+   <button type="button" onclick="onDisplay()"> Display </button>
+   <script>
+        function onDisplay() {
+            window.alert(20 + 5);
+            alert(25 + 5);
+            console.log(30+5);
+
+        }
+   </script>
+    <button type="button" onclick="window.print()"> print </button>
+
+</body>
+
+</html>
