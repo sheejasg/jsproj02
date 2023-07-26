@@ -35,6 +35,7 @@ function onSum() {
 }
 
 function onSum1() {
+    //value of abc cannot be accessed outside block - onSum()
     document.getElementById("demo6").innerHTML = "The value outside block is" + abc + ".";
 
 }
